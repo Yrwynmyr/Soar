@@ -10,6 +10,12 @@ class App extends Component {
       <h1>Garrett Johnson</h1>
       <h2>Profolio</h2>
   </div>
+      <div className="Sidescroll">
+      <div className="row">
+      <p>My detailed portfolio of Machine Learning Notebook and more.</p>
+      </div>
+      
+      </div>
 <iframe
     allow="microphone;"
     width="350"
