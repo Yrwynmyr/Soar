@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { logo } from './sun.gif';
+import Sun from './sun.gif';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-      <img className="Logo" src={logo} alt="Logo"/>
+      <img className="Logo" src={Sun} alt="Logo"/>
       <div className="Header">
       <h1>Garrett Johnson</h1>
       <h2>Profolio</h2>
