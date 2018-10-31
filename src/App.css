@@ -34,3 +34,28 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+@media only screen and (max-width: 480px) {
+  .Header {
+    width: 270px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px),(orientation: portrait) {
+ .App {
+    width: 95%;
+  }
+}
+
+@media only screen and (min-resolution: 150dpi) {
+ 
+}
+@media only screen and (max-resolution: 150dpi) and (max-width: 480px){
+  
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .Sidescroll {
+    float: left;
+    width: 20em;
+  }
+ 
+}
