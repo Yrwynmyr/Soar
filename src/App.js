@@ -14,14 +14,7 @@ class App extends Component {
       <img className="Logo" src={Sun} alt="Logo"/>
       <h1>Garrett Johnson</h1>
       <h2>Profolio</h2>
-  </div>
-         <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Colab</a>
-  <a href="#">Contact</a>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  
 </div>
         <p>My detailed portfolio of Machine Learning Notebook and more.</p>
      
