@@ -24,11 +24,12 @@ class App extends Component {
   <a href="#">Services</a>
   <a href="#">Colab</a>
   <a href="#">Contact</a>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 </div>
       <h1>Garrett Johnson</h1>
       <h2>Profolio</h2>
   </div>
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open tab</span>
+      
         <p>My detailed portfolio of Machine Learning Notebook and more.</p>
      
 <iframe
