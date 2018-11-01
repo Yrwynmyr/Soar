@@ -17,8 +17,7 @@ class App extends Component {
   
 </div>
         <p>My detailed portfolio of Machine Learning Notebook and more.</p>
-     
-<iframe
+  <iframe
     allow="microphone;"
     width="350"
     height="430"
