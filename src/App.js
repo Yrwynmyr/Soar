@@ -2,6 +2,15 @@ import React, { Component } from 'react';
 import Sun from './sun.gif';
 import './App.css';
 
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+ 
 class App extends Component {
   render() {
     return (
@@ -9,6 +18,13 @@ class App extends Component {
       
       <div className="Header">
       <img className="Logo" src={Sun} alt="Logo"/>
+      <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Colab</a>
+  <a href="#">Contact</a>
+</div>
       <h1>Garrett Johnson</h1>
       <h2>Profolio</h2>
   </div>
