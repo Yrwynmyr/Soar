@@ -34,13 +34,13 @@ class App extends Component {
 </iframe>
 <script>
       function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
+    document.getElementById("mySidenav").style.width = "250px"
+};
 
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("mySidenav").style.width = "0"
     </script>
-}
+};
       </div>
     );
   }
