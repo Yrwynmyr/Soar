@@ -12,7 +12,10 @@ class App extends Component {
       
       <div className="Header">
       <img className="Logo" src={Sun} alt="Logo"/>
-      <div id="mySidenav" class="sidenav">
+      <h1>Garrett Johnson</h1>
+      <h2>Profolio</h2>
+  </div>
+         <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#">About</a>
   <a href="#">Services</a>
@@ -20,10 +23,6 @@ class App extends Component {
   <a href="#">Contact</a>
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 </div>
-      <h1>Garrett Johnson</h1>
-      <h2>Profolio</h2>
-  </div>
-      
         <p>My detailed portfolio of Machine Learning Notebook and more.</p>
      
 <iframe
@@ -32,15 +31,7 @@ class App extends Component {
     height="430"
     src="https://console.dialogflow.com/api-client/demo/embedded/c871ea8e-b785-4002-a948-6192220f5935">
 </iframe>
-<script>
-      function openNav() {
-    document.getElementById("mySidenav").style.width = "250px"
-};
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0"
-    </script>
-};
       </div>
     );
   }
