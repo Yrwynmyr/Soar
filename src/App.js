@@ -25,11 +25,11 @@ class App extends Component {
     src="https://console.dialogflow.com/api-client/demo/embedded/c871ea8e-b785-4002-a948-6192220f5935">
 </iframe>
    <footer>
-   <video width="400" controls>
-  <source src={TheHeights} type="video/mp4"/>
-  <source src={TheHeights} type="video/ogg"/>
+   <audio height"300" width="400" controls>
+  <source src={TheHeights} type="audio/mp3"/>
+  <source src={TheHeights} type="audio/mp3"/>
   Your browser does not support HTML5 video.
-</video>
+</audio>
 
 </footer>
       </div>
