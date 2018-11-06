@@ -12,8 +12,8 @@ class App extends Component {
       <div className="App">
       <div className="Audio">
    <audio controls>
-  <source src={TheHeights} type="audio/mpeg">
-  <source src={TheHeights} type="audio/mpeg">
+  <source src={TheHeights} type="audio/mpeg"/>
+  <source src={TheHeights} type="audio/mpeg"/>
 </audio>
 </div>
       <div className="Header">
