@@ -14,7 +14,7 @@ class App extends Component {
    <audio controls>
   <source src={TheHeights} type="audio/mpeg"/>
   <source src={TheHeights} type="audio/mpeg"/>
-</audio>
+
 </div>
       <div className="Header">
       <img className="Logo" src={Sun} alt="Logo"/>
