@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Sun from './sun.gif';
+import TheHeights from './TheHeights.mp3';
 import './App.css';
 
 
@@ -23,7 +24,14 @@ class App extends Component {
     height="430"
     src="https://console.dialogflow.com/api-client/demo/embedded/c871ea8e-b785-4002-a948-6192220f5935">
 </iframe>
+   <footer>
+   <video width="400" controls>
+  <source src={TheHeights} type="video/mp4"/>
+  <source src={TheHeights} type="video/ogg"/>
+  Your browser does not support HTML5 video.
+</video>
 
+</footer>
       </div>
     );
   }
