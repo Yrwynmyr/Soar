@@ -28,12 +28,7 @@ class App extends Component {
     height="430"
     src="https://console.dialogflow.com/api-client/demo/embedded/c871ea8e-b785-4002-a948-6192220f5935">
 </iframe>
-<div className="Audio">
-   <audio controls>
-  <source src={TheHeights} type="audio/mpeg">
-  <source src={TheHeights} type="audio/mpeg">
-</audio>
-</div>
+
       </div>
     );
   }
