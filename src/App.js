@@ -26,9 +26,8 @@ class App extends Component {
 </iframe>
 <div className="Audio">
    <audio controls>
-  <source src={TheHeights} type="audio/mpeg"/>
-  <source src={TheHeights} type="audio/mpeg"/>
-  Your browser does not support HTML5 video.
+  <source src={TheHeights} type="audio/mpeg">
+  <source src={TheHeights} type="audio/mpeg">
 </audio>
 </div>
       </div>
