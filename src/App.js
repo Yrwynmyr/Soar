@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Sun from './sun.gif';
 import TheHeights from './TheHeights.mp3';
+import Delusions from './Delusions.mp3';
 import './App.css';
 
 
@@ -13,6 +14,8 @@ class App extends Component {
       <div className="Audio">
    <audio controls>
   <source src={TheHeights} alt="music"/></audio>
+        <audio controls>
+  <source src={Delusions} alt="music"/></audio>
 
 </div>
       <div className="Header">
