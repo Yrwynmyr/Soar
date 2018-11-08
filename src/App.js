@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Sun from './sun.gif';
 import TheHeights from './TheHeights.mp3';
-import Delusions from './Delusions.mp3';
+import Delusion from './Delusion.mp3';
 import './App.css';
 
 
@@ -15,7 +15,7 @@ class App extends Component {
    <audio controls>
   <source src={TheHeights} alt="music"/></audio>
         <audio controls>
-  <source src={Delusions} alt="music"/></audio>
+  <source src={Delusion} alt="music"/></audio>
 
 </div>
       <div className="Header">
