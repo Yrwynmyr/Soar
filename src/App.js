@@ -14,9 +14,9 @@ class App extends Component {
       <div className="App">
       <div className="Audio"><h1>My Original Songs on Guitar</h1>
    <audio controls>
-  <source src={TheHeights} type="audio/mp3"/>
-  <source src={Delusion} type="audio/mp3"/>
-  <source src={IceBurgs} type"audio/mp3"/>   
+  <source src={TheHeights}/>
+  <source src={Delusion}/>
+  <source src={IceBurgs}/>   
 Your browser does not support the audio element.
 </audio> 
 </div>
