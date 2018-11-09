@@ -32,7 +32,7 @@ Your browser does not support the audio element.
     src="https://console.dialogflow.com/api-client/demo/embedded/c871ea8e-b785-4002-a948-6192220f5935">
 </iframe><div>
 <a href="https://my-jams.herokuapp.com"><h1>My(Heavy-Metal)Jams click here</h1></a>
-   
+   </div>
 </div>  
   
     );
