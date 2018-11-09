@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
   <div className="App">
-      <div className="Audio"><h1>My Original Songs on Guitar</h1>
+      <h1>My Original Songs on Guitar</h1>
    <audio controls>
   <source src={TheHeights}/>
   <source src={Delusion}/>
@@ -23,7 +23,7 @@ Your browser does not support the audio element.
       <img className="Logo" src={Sun} alt="Logo"/>
       <h1>Garrett Johnson</h1>
       <h2>Profolio</h2>
-  </div>
+     </div>
       <p>My detailed portfolio of Machine Learning Notebook and more.</p>
   <iframe
     allow="microphone;"
@@ -32,8 +32,8 @@ Your browser does not support the audio element.
     src="https://console.dialogflow.com/api-client/demo/embedded/c871ea8e-b785-4002-a948-6192220f5935">
 </iframe><div>
 <a href="https://my-jams.herokuapp.com"><h1>My(Heavy-Metal)Jams click here</h1></a>
-   </div>
-   </div>
+   
+</div>  
   
     );
   }
