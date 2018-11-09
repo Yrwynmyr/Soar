@@ -11,23 +11,20 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+  <div className="App">
       <div className="Audio"><h1>My Original Songs on Guitar</h1>
    <audio controls>
   <source src={TheHeights}/>
   <source src={Delusion}/>
   <source src={IceBurgs}/>   
 Your browser does not support the audio element.
-</audio> 
-</div>
-     </div>
+</audio>  
       <div className="Header">
       <img className="Logo" src={Sun} alt="Logo"/>
       <h1>Garrett Johnson</h1>
       <h2>Profolio</h2>
-  
-</div>
-        <p>My detailed portfolio of Machine Learning Notebook and more.</p>
+  </div>
+      <p>My detailed portfolio of Machine Learning Notebook and more.</p>
   <iframe
     allow="microphone;"
     width="350"
