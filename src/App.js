@@ -19,7 +19,8 @@ class App extends Component {
        
   <source src={IceBurgs} alt="music"/></audio>
  <audio controls>
-
+</div>
+     </div>
       <div className="Header">
       <img className="Logo" src={Sun} alt="Logo"/>
       <h1>Garrett Johnson</h1>
