@@ -31,7 +31,7 @@ class App extends Component {
     height="430"
     src="https://console.dialogflow.com/api-client/demo/embedded/c871ea8e-b785-4002-a948-6192220f5935">
 </iframe>
-<a href="https://my-jams.herokuapp.com">My-Jams</a>
+<a href="https://my-jams.herokuapp.com"><h1>My-Jams click here</h1></a>
       </div>
     );
   }
