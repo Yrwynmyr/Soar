@@ -16,9 +16,9 @@ class App extends Component {
    <audio controls>
   <source src={TheHeights} alt="music"/></audio>
   <source src={Delusion} alt="music"/></audio>
-        <audio controls>
+       
   <source src={IceBurgs} alt="music"/></audio>
-
+ <audio controls>
 </div>
       <div className="Header">
       <img className="Logo" src={Sun} alt="Logo"/>
