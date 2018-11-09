@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Sun from './sun.gif';
 import TheHeights from './TheHeights.mp3';
 import Delusion from './Delusion.mp3';
+import IceBurgs from './IceBurgs.mp3';
 import './App.css';
 
 
@@ -13,9 +14,10 @@ class App extends Component {
       <div className="App">
       <div className="Audio">
    <audio controls>
-  <source src={TheHeights} alt="music"/></audio>
+  <source src={TheHeights} alt="music"
+     src={Delusion} alt="music'/></audio>
         <audio controls>
-  <source src={Delusion} alt="music"/></audio>
+  <source src={IceBurgs} alt="music"/></audio>
 
 </div>
       <div className="Header">
@@ -31,7 +33,7 @@ class App extends Component {
     height="430"
     src="https://console.dialogflow.com/api-client/demo/embedded/c871ea8e-b785-4002-a948-6192220f5935">
 </iframe>
-<a href="https://my-jams.herokuapp.com"><h1>My-Jams click here</h1></a>
+<a href="https://my-jams.herokuapp.com"><h1>My(Heavy-Metal)Jams click here</h1></a>
       </div>
     );
   }
