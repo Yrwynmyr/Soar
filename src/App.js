@@ -15,10 +15,13 @@ class App extends Component {
       <h1>My Original Songs on Guitar</h1>
    <audio controls>
   <source src={TheHeights}/>
-  <source src={Delusion}/>
-  <source src={IceBurgs}/>   
-Your browser does not support the audio element.
 </audio>  
+     <audio controls>
+     <source src={Delusion}/> 
+     </audio>
+     <audio controls>
+     <source src={IceBurgs}/>
+     </audio>
       <div className="Header">
       <img className="Logo" src={Sun} alt="Logo"/>
       <h1>Garrett Johnson</h1>
