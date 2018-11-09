@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <div className="Audio"><h1>My Originanl Songs on Guitar</h1>
+      <div className="Audio"><h1>My Original Songs on Guitar</h1>
    <audio controls>
   <source src={TheHeights} alt="music"/></audio>
   <source src={Delusion} alt="music"/></audio>
