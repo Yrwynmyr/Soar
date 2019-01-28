@@ -28,12 +28,7 @@ class App extends Component {
       <h2>Profolio</h2>
      </div>
       <p>My detailed portfolio of Machine Learning Notebook and more.</p>
-  <iframe
-    allow="microphone;"
-    width="350"
-    height="430"
-    src="https://console.dialogflow.com/api-client/demo/embedded/c871ea8e-b785-4002-a948-6192220f5935">
-</iframe><div>
+  <iframe height="430" width="350" src="https://bot.dialogflow.com/a3812734-29c0-4c9d-87f5-6b4503c57f65"></iframe><div>
 <a href="https://my-jams.herokuapp.com"><h1>My(Heavy-Metal)Jams click here</h1></a>
    </div>
 </div>  
