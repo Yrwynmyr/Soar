@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body><h1>Hello world im learning! ML model</h1><script>
+    async function showExamples() {
+    // Get a surface
+    const surface = tfvis.visor().surface({
+    name: 'My First Surface',
+    tab: 'Input Data'
+    });
+    const drawArea = surface.drawArea; // Get the examples
+
+    const examples = data.nextTestBatch(20);
+    const numExamples = examples.xs.shape[0];
+
+    for (let i = 0; i < numExamples; i++) {
+    const imageTensor = tf.tidy(() => {
+    return examples.xs.slice([i, 0], [1, examples.xs.shape[1]]).reshape([28, 28, 1]);
+    }); // Create a canvas element to render each example
+
+    const canvas = document.createElement('canvas');
+    canvas.width = 28;
+    canvas.height = 28;
+    canvas.style = 'margin: 4px;';
+    await tf.browser.toPixels(imageTensor, canvas);
+    drawArea.appendChild(canvas);
+    imageTensor.dispose();
+    }
+    }
+
+    document.querySelector('#show-examples').addEventListener('click', async e => showExamples());
+    async function train(model, data, fitCallbacks) {
+  const BATCH_SIZE = 64;
+  const trainDataSize = 500;
+  const testDataSize = 100;
+  const [trainXs, trainYs] = tf.tidy(() => {
+    const d = data.nextTrainBatch(trainDataSize);
+    return [d.xs.reshape([trainDataSize, 28, 28, 1]), d.labels];
+  });
+  const [testXs, testYs] = tf.tidy(() => {
+    const d = data.nextTestBatch(testDataSize);
+    return [d.xs.reshape([testDataSize, 28, 28, 1]), d.labels];
+  });
+  return model.fit(trainXs, trainYs, {
+    batchSize: BATCH_SIZE,
+    validationData: [testXs, testYs],
+    epochs: 10,
+    shuffle: true,
+    callbacks: fitCallbacks
+  });
+}
+    async function watchTraining() {
+  const metrics = ['loss', 'val_loss', 'acc', 'val_acc'];
+  const container = {
+    name: 'show.fitCallbacks',
+    tab: 'Training',
+    styles: {
+      height: '1000px'
+    }
+  };
+  const callbacks = tfvis.show.fitCallbacks(container, metrics);
+  return train(model, data, callbacks);
+}
+
+    document.querySelector('#start-training-1').addEventListener('click', () => watchTraining());
+
+    async function showTrainingHistory() {
+  const trainingHistory = await train(model, data);
+  tfvis.show.history({
+    name: 'Training History',
+    tab: 'Training'
+  }, trainingHistory, ['loss', 'val_loss', 'acc', 'val_acc']);
+}
+
+    document.querySelector('#start-training-2').addEventListener('click', () => showTrainingHistory());
+
+    
+  const classNames = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'];
+
+  function doPrediction(testDataSize = 500) {
+    const testData = data.nextTestBatch(testDataSize);
+    const testxs = testData.xs.reshape([testDataSize, 28, 28, 1]);
+    const labels = testData.labels.argMax([-1]);
+    const preds = model.predict(testxs).argMax([-1]);
+    testxs.dispose();
+    return [preds, labels];
+  }
+
+  async function showAccuracy() {
+    const [preds, labels] = doPrediction();
+    const classAccuracy = await tfvis.metrics.perClassAccuracy(labels, preds);
+    const container = {
+      name: 'Accuracy',
+      tab: 'Evaluation'
+    };
+    tfvis.show.perClassAccuracy(container, classAccuracy, classNames);
+    labels.dispose();
+  }
+
+  async function showConfusion() {
+    const [preds, labels] = doPrediction();
+    const confusionMatrix = await tfvis.metrics.confusionMatrix(labels, preds);
+    const container = {
+      name: 'Confusion Matrix',
+      tab: 'Evaluation'
+    };
+    tfvis.render.confusionMatrix(container, {
+      values: confusionMatrix,
+      tickLabels: classNames
+    });
+    labels.dispose();
+  }
+
+  document.querySelector('#show-accuracy').addEventListener('click', () => showAccuracy());
+  document.querySelector('#show-confusion').addEventListener('click', () => showConfusion());
+
+
+
+    </script>
+
+
+</body>
+</html>
